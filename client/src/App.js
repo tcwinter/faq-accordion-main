@@ -4,6 +4,7 @@ import minus from "./images/icon-minus.svg";
 import plus from "./images/icon-plus.svg";
 import star from "./images/icon-star.svg";
 import './App.css';
+import { useState } from 'react';
 
 function App() {
   return (
@@ -55,18 +56,54 @@ function CardHeading() {
 }
 
 function Questions() {
+  const [show, setShow] = useState(false);
+  const [show2, setShow2] = useState(false);
+  const [show3, setShow3] = useState(false);
+  const [show4, setShow4] = useState(false);
+
   return(
     <div className="questions">
-      <div className="question-container">What is Frontend Mentor, and how will it help me?<img className="plus" src={plus} alt="NOPE"></img></div>
+      <div className="question-container" onClick={() => setShow(currentShow => !currentShow)}>What is Frontend Mentor, and how will it help me?<img className="plus" src={plus} alt="NOPE"></img></div>
+        { show ? <Answer ans="Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building." /> : null}
       <div className="break"></div>
-      <div className="question-container">Is Frontend Mentor free?<img className="plus" src={plus}></img></div>
+      <div className="question-container" onClick={() => setShow2(currentShow => !currentShow)}>Is Frontend Mentor free?<img className="plus" src={plus}></img></div>
+        { show2 ? <Answer2 /> : null}
       <div className="break"></div>
-      <div className="question-container">Can I use Frontend Mentor projects in my portfolio?<img className="plus" src={plus}></img></div>
+      <div className="question-container" onClick={() => setShow3(currentShow => !currentShow)}>Can I use Frontend Mentor projects in my portfolio?<img className="plus" src={plus}></img></div>
+        { show3 ? <Answer3 /> : null}
       <div className="break"></div>
-      <div className="question-container">How can I get help if I'm stuck on a challenge?<img className="plus" src={plus}></img></div>
+      <div className="question-container"onClick={() => setShow4(currentShow => !currentShow)}>How can I get help if I'm stuck on a challenge?<img className="plus" src={plus}></img></div>
+        { show4 ? <Answer4 /> : null}
     </div>
   );
-<img src={background} alt="no image ):"></img>
+}
+
+const Answer = props => <p>{props.ans}</p>;
+
+const Query = props => <div>{props.q}</div> 
+
+function Answer1() {
+  return(
+    <p>Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building.</p>
+  );
+}
+
+function Answer2() {
+  return(
+    <p>Yes, Frontend Mentor offers both free and premium coding challenges, with the free option providing access to a range of projects suitable for all skill levels.</p>
+  );
+}
+
+function Answer3() {
+  return(
+    <p>Yes, you can use projects completed on Frontend Mentor in your portfolio. It's an excellent way to showcase your skills to potential employers!</p>
+  );
+}
+
+function Answer4() {
+  return(
+    <p>The best place to get help is inside Frontend Mentor's Discord community. There's a help channel where you can ask questions and seek support from other community members.</p>
+  );
 }
 
 function Wrapper(props) {
