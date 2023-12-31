@@ -1,0 +1,67 @@
+.MainCard {
+  background-color: white;
+  box-shadow: inset;
+  border-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 25px;
+  width: 500px;
+}
+
+.Wrapper {
+  display: grid;
+  justify-content: center;
+  align-items: center; 
+  height: 50%;
+}
+
+.Page {
+  background-color: lavender;
+  height: 100vh;
+}
+
+.background {
+  width: 100%;
+  object-fit: contain;
+}
+
+.heading {
+  font-size: 3ex; 
+  display: flex;
+  margin-top: -30px;
+}
+
+.star {
+}
+
+.move-over {
+  padding-right: 10px;
+}
+
+.questions {
+  display: flex;
+  flex-direction: column;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.plus {
+  height: 25px;
+  padding-left: auto;
+  
+}
+
+.question-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.break {
+  height: 1px;
+  background-color: lightgray;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
