@@ -60,20 +60,24 @@ function Questions() {
   const [show2, setShow2] = useState(false);
   const [show3, setShow3] = useState(false);
   const [show4, setShow4] = useState(false);
+  const [img, setImg] = useState(false);
+  const [img2, setImg2] = useState(false);
+  const [img3, setImg3] = useState(false);
+  const [img4, setImg4] = useState(false);
 
   return(
     <div className="questions">
-      <div className="question-container" onClick={() => setShow(currentShow => !currentShow)}>What is Frontend Mentor, and how will it help me?<img className="plus" src={plus} alt="NOPE"></img></div>
-        { show ? <Answer ans="Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building." /> : null}
+      <div className="question-container" onClick={() => setShow(currentShow => !currentShow)}>What is Frontend Mentor, and how will it help me?<img className="plus" onClick={() => setImg(currentImg => !currentImg)} src={img ? minus : plus} alt="NOPE"></img></div>
+        { img ? <Answer ans="Frontend Mentor offers realistic coding challenges to help developers improve their frontend coding skills with projects in HTML, CSS, and JavaScript. It's suitable for all levels and ideal for portfolio building." /> : null}
       <div className="break"></div>
-      <div className="question-container" onClick={() => setShow2(currentShow => !currentShow)}>Is Frontend Mentor free?<img className="plus" src={plus}></img></div>
-        { show2 ? <Answer2 /> : null}
+      <div className="question-container" onClick={() => setShow2(currentShow => !currentShow)}>Is Frontend Mentor free?<img className="plus" onClick={() => setImg2(currentImg => !currentImg)} src={img2 ? minus : plus}></img></div>
+        { img2 ? <Answer2 /> : null}
       <div className="break"></div>
-      <div className="question-container" onClick={() => setShow3(currentShow => !currentShow)}>Can I use Frontend Mentor projects in my portfolio?<img className="plus" src={plus}></img></div>
-        { show3 ? <Answer3 /> : null}
+      <div className="question-container" onClick={() => setShow3(currentShow => !currentShow)}>Can I use Frontend Mentor projects in my portfolio?<img className="plus" onClick={() => setImg3(currentImg => !currentImg)} src={img3 ? minus : plus}></img></div>
+        { img3 ? <Answer3 /> : null}
       <div className="break"></div>
-      <div className="question-container"onClick={() => setShow4(currentShow => !currentShow)}>How can I get help if I'm stuck on a challenge?<img className="plus" src={plus}></img></div>
-        { show4 ? <Answer4 /> : null}
+      <div className="question-container"onClick={() => setShow4(currentShow => !currentShow)}>How can I get help if I'm stuck on a challenge?<img className="plus" onClick={() => setImg4(currentImg => !currentImg)} src={img4 ? minus : plus}></img></div>
+        { img4 ? <Answer4 /> : null}
     </div>
   );
 }

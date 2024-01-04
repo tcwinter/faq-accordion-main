@@ -10,16 +10,24 @@
 .Wrapper {
   display: grid;
   justify-content: center;
+  margin-top: -100px;
+  padding-bottom: 100px;
 }
 
 .Page {
   background-color: lavender;
-  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height:100vh;
 }
+
+html {background-color: lavender;}
 
 .background {
   width: 100%;
   object-fit: contain;
+  display: flex;
 }
 
 .heading {
