@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/faq-accordion-main/static/css/main.45e661b3.css",
+    "main.js": "/faq-accordion-main/static/js/main.6ba23539.js",
+    "static/js/787.d5fa4d18.chunk.js": "/faq-accordion-main/static/js/787.d5fa4d18.chunk.js",
+    "static/media/logo.svg": "/faq-accordion-main/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "static/media/background-pattern-desktop.svg": "/faq-accordion-main/static/media/background-pattern-desktop.621478cf83f8150af60411d3765de0eb.svg",
+    "static/media/icon-star.svg": "/faq-accordion-main/static/media/icon-star.189fd38b8aefdc8fbe0d4008b1ff497e.svg",
+    "static/media/icon-plus.svg": "/faq-accordion-main/static/media/icon-plus.6c5381bcc9a768ea5c3683e11c6bfd6c.svg",
+    "index.html": "/faq-accordion-main/index.html",
+    "static/media/icon-minus.svg": "/faq-accordion-main/static/media/icon-minus.5575b6de09a1e0deab1dd585ada35f31.svg",
+    "main.45e661b3.css.map": "/faq-accordion-main/static/css/main.45e661b3.css.map",
+    "main.6ba23539.js.map": "/faq-accordion-main/static/js/main.6ba23539.js.map",
+    "787.d5fa4d18.chunk.js.map": "/faq-accordion-main/static/js/787.d5fa4d18.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45e661b3.css",
+    "static/js/main.6ba23539.js"
+  ]
+}
